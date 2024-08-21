@@ -1,7 +1,7 @@
 export type Card = "2" | "3" | "4" | "5" | "6" | "7" | "Q" | "J" | "K" | "A";
 
 const defaultOrder: Card[] = ["4", "5", "6", "7", "Q", "J", "K", "A", "2", "3"];
-const suits = ["♢", "♠", "♡", "♣"];
+const suits = ["♦", "♠", "♥", "♣"];
 
 export const useCards = (tableCard: Card) => {
   const tableCardIndex = defaultOrder.findIndex((value) => value === tableCard);
